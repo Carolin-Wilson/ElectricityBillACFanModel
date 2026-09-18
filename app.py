@@ -6,7 +6,7 @@ import streamlit as st
 # Load the trained model pipeline
 @st.cache_resource
 def load_model():
-    with open("electric_bill_model.pkl", "rb") as f:
+    with open("electric_bill_model_acfan.pkl", "rb") as f:
         model = pickle.load(f)
     return model
 
